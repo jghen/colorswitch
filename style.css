@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: ubuntu, 'sans-serif';
+    color: rgb(205, 209, 223);
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    height: 10vh;
+    background: rgb(238, 37, 2);
+}
+
+h1 {
+    text-transform: capitalize;
+}
+
+article {
+    height: 90vh;
+    background: rgb(32, 31, 31);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+section {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+main > article > section:nth-of-type(1) {
+    height: 20vh;
+}
+
+main > article > section:nth-of-type(2) {
+    height: 30vh;
+}
+
+main > article > section:nth-of-type(3) {
+    height: 20vh;
+}
+main > article > section:nth-of-type(4) {
+    height: 20vh;
+}
+
+ul {
+    width: 5vw;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+ul > li {
+    margin-left: -2.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+input, button {
+    border-radius: 0px;
+    box-shadow: none;
+    border: 0.1px solid black;
+}
+
+ul > li, ul > li > input, section > input, button{
+    height: 1.8rem;
+    width: 3rem;
+}
+
+section > button {
+    height: 2rem;
+    width: 7rem;
+}
+
+section > input {
+    color: white;
+    text-indent: 0.3rem;
+    height: 2rem;
+    width: 5rem;
+}
+
+
+

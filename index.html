@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ColorSwitch</title>
+</head>
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <article>
+            <section>
+                <h1>Rgb to hex converter</h1>
+            </section>
+            <section class="rgb-inputs">
+                <ul>
+                    <li>
+                        <label for="color-red">red:</label>
+                    </li>
+                    <li>
+                        <label for="color-green">green:</label>
+                    </li>
+                    <li>
+                        <label for="color-blue">blue:</label>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <input type="number" value="0" name="color-red" class="red">
+                    </li>
+                    <li>
+                        <input type="number" value="0" name="color-green" class="green">
+                    </li>
+                    <li>
+                        <input type="number" value="0" name="color-blue" class="blue">
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <button>Convert to hex:</button>
+                <input disabled type="text" name="hex-color" id="hex">
+            </section>
+            <section>
+                <input type="color" name="display-color" id="color">
+            </section>
+        </article>
+    </main>
+    <script src="rgbtohex.js"></script>
+</body>
+</html>
