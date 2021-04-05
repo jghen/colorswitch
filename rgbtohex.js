@@ -9,6 +9,8 @@ let hexInput = document.querySelector('#hex');
 let button = document.querySelector('button');
 let colorInput = document.querySelector('#color');
 
+colorInput.textContent = 'Click Me!';
+
 // convert a 3 digit rgb to 2 digit hex
 const convertRgbValue = (rgb) => {
   let hex = Number(rgb).toString(16);

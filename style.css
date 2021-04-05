@@ -5,19 +5,16 @@ html, body {
 }
 body {
     font-family: ubuntu, 'sans-serif';
-    color: rgb(223, 209, 205);
+    color: rgb(241, 235, 233);
     height: 100vh;
     width: 100vw;
     font-size: 30px;
+    text-transform: capitalize;
 }
 
 header{
     height: 10vh;
-    background: rgb(204, 44, 16);
-}
-
-h1 {
-    text-transform: capitalize;
+    background: rgb(30, 200, 255);
 }
 
 article {
@@ -46,25 +43,32 @@ main > article > section:nth-of-type(2) {
 }
 
 main > article > section:nth-of-type(3) {
-    height: 20vh;
+    height: 15vh;
 }
 main > article > section:nth-of-type(4) {
-    height: 20vh;
+    height: 25vh;
 }
 
 ul {
-    width: 15vw;
+    width: 7rem;
     list-style-type: none;
     display: flex;
     flex-direction: column;
     align-content: center;
+    background: rgb(35, 35, 35);
+    padding: 0;
 }
 
 ul > li {
-    margin-left: -2.5rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    text-align: center;
+}
+
+ul > li > label {
+    margin-right: 1rem;
+    color: rgb(231, 231, 231);
 }
 
 ul > li > input {
@@ -74,9 +78,8 @@ ul > li > input {
 }
 
 input, button {
-    border: 0.1px solid rgb(44, 42, 42);
-    font-size: 20px;
-    margin: 0;
+    border: 0.1px solid rgb(35, 35, 35);
+    font-size: 26px;
 }
 /* firefox */
 input[type='number'] {
@@ -89,19 +92,31 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
-ul > li, ul > li > input, section > input, button{
+ul > li, ul > li > input, section > input{
     height: 3rem;
     width: 7rem;
 }
 
 section > input {
-    color: rgb(235, 224, 221);
+    color: rgb(231, 231, 231);
     text-indent: 0.5rem;
-    background: rgb(39, 37, 37);
+    background: rgb(35, 35, 35);
     border-radius: 3px;
-    border: none;
     padding: 0;
     outline: none;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+}
+
+input[type="color"]{
+    height: 7rem;
+    width: 14rem;
+    
 }
 
 button {
@@ -109,13 +124,15 @@ button {
     width: 6.9rem;
     border-radius: 3px;
     background: rgb(231, 231, 231);
+    text-indent: .4rem;
+    direction: rtl;
+    text-align: right;
+    font-size: 30px;
 }
 button:hover {
     transition: 0.1s;
     transform: scale(1.02);
-    background: white;
-    
-    
+    background: white;  
     
 }
 
